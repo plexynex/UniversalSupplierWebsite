@@ -1319,9 +1319,9 @@
                         <i class="fas fa-cart-plus"></i>
                         ${product.stock === 0 ? 'Stok Habis' : 'Tambah ke Keranjang'}
                     </button>
-                    <a href="${product.detailUrl}" class="view-details" data-id="${product.id}">
-                        <i class="fas fa-info-circle"></i> Lihat Deskripsi
-                    </a>
+                    // <a href="${product.detailUrl}" class="view-details" data-id="${product.id}">
+                    //     <i class="fas fa-info-circle"></i> Lihat Deskripsi
+                    // </a>
                 `;
                 
                 productsContainer.appendChild(productCard);
@@ -1398,9 +1398,9 @@
                                 <input type="number" class="quantity-input" value="${item.quantity}" min="1" data-id="${item.id}">
                                 <button class="quantity-btn plus" data-id="${item.id}">+</button>
                             </div>
-                            // <button class="remove-item" data-id="${item.id}">
-                            //     <i class="fas fa-trash"></i>
-                            // </button>
+                            <button class="remove-item" data-id="${item.id}">
+                                <i class="fas fa-trash"></i>
+                            </button>
                         </div>
                     </div>
                 `;
