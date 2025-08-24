@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Supplier Loundry</title>
+    <title>Plexy Store - Belanja Online Premium</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #009B97;
+            --primary: #6c5ce7;
             --primary-dark: #5649c0;
             --text: #2d3436;
             --text-light: #636e72;
@@ -121,7 +121,7 @@
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 2rem 1rem;
-            background: var(--card-bg);
+            background: transparent;
             border-bottom: 1px solid var(--card-border);
         }
         
@@ -927,7 +927,7 @@
         <div class="header-container">
             <div class="logo">
                 <i class="fas fa-store"></i>
-                <span>Universal Supplier Loundry</span>
+                <span>Plexy Store</span>
             </div>
             <nav class="nav-links">
                 <a href="#">Beranda</a>
@@ -947,7 +947,7 @@
     <div class="search-container">
         <div class="search-bar">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Search">
+            <input type="text" id="search-input" placeholder="Cari produk berdasarkan nama atau deskripsi...">
         </div>
     </div>
     
@@ -1107,7 +1107,7 @@
         const products = [
             {
                 id: 1,
-                title: "Paket Loundry Coin",
+                title: "Quantum Wireless Headphones",
                 price: 2499900,
                 originalPrice: 2999900,
                 description: "Pengalaman audio jernih dengan headphone nirkabel premium kami yang memiliki pembatalan kebisingan aktif dan baterai tahan 30 jam. Desain ergonomis yang nyaman digunakan sepanjang hari. Dilengkapi dengan teknologi canggih untuk kualitas suara terbaik.",
@@ -1319,11 +1319,10 @@
                         <i class="fas fa-cart-plus"></i>
                         ${product.stock === 0 ? 'Stok Habis' : 'Tambah ke Keranjang'}
                     </button>
+                    <a href="${product.detailUrl}" class="view-details" data-id="${product.id}">
+                        <i class="fas fa-info-circle"></i> Lihat Deskripsi
+                    </a>
                 `;
-                // pindahkan keatas (dibawah button) untuk menambahkan tombol lihat descripsi
-                    // <a href="${product.detailUrl}" class="view-details" data-id="${product.id}">
-                    //     <i class="fas fa-info-circle"></i> Lihat Deskripsi
-                    // </a>
                 
                 productsContainer.appendChild(productCard);
             });
@@ -1548,38 +1547,33 @@
             });
         });
         
-        // Fungsi untuk menghasilkan pesan WhatsApp
+        // Fungsi untuk menghasilkan pesan WhatsApp yang rapi
         function generateWhatsAppMessage() {
             const name = document.getElementById('customer-name').value;
             const phone = document.getElementById('customer-phone').value;
             const address = document.getElementById('customer-address').value;
             const notes = document.getElementById('customer-notes').value;
             
-            // Format pesan
-            let message = `Halo, saya ingin memesan produk dari Plexy Store:%0A%0A`;
+            // Format pesan dengan template string yang rapi
+            const message = `Halo, saya ingin memesan produk dari Plexy Store:
+
+*Daftar Produk:*
+${cart.map((item, index) => `${index + 1}. ${item.title} - ${formatRupiah(item.price)} x ${item.quantity}`).join('\n')}
+
+*Informasi Pemesan:*
+Nama: ${name}
+WhatsApp: ${phone}
+Alamat: ${address}
+${notes ? `Catatan: ${notes}\n` : ''}
+*Total: ${formatRupiah(cart.reduce((sum, item) => sum + (item.price * item.quantity), 0))}*
+
+Terima kasih!`;
             
-            // Daftar produk
-            message += `*Daftar Produk:*%0A`;
-            cart.forEach((item, index) => {
-                message += `${index + 1}. ${item.title} - ${formatRupiah(item.price)} x ${item.quantity}%0A`;
-            });
-            
-            // Informasi pengguna
-            message += `%0A*Informasi Pemesan:*%0A`;
-            message += `Nama: ${name}%0A`;
-            message += `WhatsApp: ${phone}%0A`;
-            message += `Alamat: ${address}%0A`;
-            if (notes) {
-                message += `Catatan: ${notes}%0A`;
-            }
-            
-            // Total harga
-            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            message += `%0A*Total: ${formatRupiah(total)}*%0A%0A`;
-            message += `Terima kasih!`;
-            
-            // Encode message untuk URL
-            const encodedMessage = encodeURIComponent(message).replace(/'/g, "%27").replace(/"/g, "%22");
+            // Encode message untuk URL dengan format yang lebih rapi
+            const encodedMessage = encodeURIComponent(message)
+                .replace(/%20/g, ' ') // Ganti %20 dengan spasi
+                .replace(/%2A/g, '*') // Ganti %2A dengan * (untuk bold)
+                .replace(/%0A/g, '%0A'); // Biarkan %0A untuk new line
             
             // Redirect ke WhatsApp
             window.open(`https://wa.me/6289677663242?text=${encodedMessage}`, '_blank');
