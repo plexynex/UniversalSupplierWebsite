@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plexy Store - Belanja Online Premium</title>
+    <title>Universal Supplier Loundry</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6c5ce7;
+            --primary: #009B97;
             --primary-dark: #5649c0;
             --text: #2d3436;
             --text-light: #636e72;
@@ -927,7 +927,7 @@
         <div class="header-container">
             <div class="logo">
                 <i class="fas fa-store"></i>
-                <span>Plexy Store</span>
+                <span>Universal Supplier Loundry</span>
             </div>
             <nav class="nav-links">
                 <a href="#">Beranda</a>
@@ -947,7 +947,7 @@
     <div class="search-container">
         <div class="search-bar">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Cari produk berdasarkan nama atau deskripsi...">
+            <input type="text" id="search-input" placeholder="Search">
         </div>
     </div>
     
@@ -1107,7 +1107,7 @@
         const products = [
             {
                 id: 1,
-                title: "Quantum Wireless Headphones",
+                title: "Paket Loundry Coin",
                 price: 2499900,
                 originalPrice: 2999900,
                 description: "Pengalaman audio jernih dengan headphone nirkabel premium kami yang memiliki pembatalan kebisingan aktif dan baterai tahan 30 jam. Desain ergonomis yang nyaman digunakan sepanjang hari. Dilengkapi dengan teknologi canggih untuk kualitas suara terbaik.",
@@ -1116,7 +1116,7 @@
                 rating: "★★★★★",
                 badge: "Terlaris",
                 stock: 15,
-                detailUrl: "/productDetail/headphone.html"
+                // detailUrl: "/productDetail/headphone.html"
             },
             {
                 id: 2,
@@ -1129,7 +1129,7 @@
                 rating: "★★★★☆",
                 badge: "Diskon",
                 stock: 8,
-                detailUrl: "/productDetail/tv.html"
+                // detailUrl: "/productDetail/tv.html"
             },
             {
                 id: 3,
@@ -1141,7 +1141,7 @@
                 rating: "★★★★★",
                 badge: "Baru",
                 stock: 5,
-                detailUrl: "/productDetail/laptop.html"
+                // detailUrl: "/productDetail/laptop.html"
             },
             {
                 id: 4,
@@ -1153,7 +1153,7 @@
                 image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=500&q=80",
                 rating: "★★★★☆",
                 stock: 20,
-                detailUrl: "/productDetail/smartwatch.html"
+                // detailUrl: "/productDetail/smartwatch.html"
             },
             {
                 id: 5,
@@ -1165,7 +1165,7 @@
                 rating: "★★★★★",
                 badge: "Limited",
                 stock: 3,
-                detailUrl: "/productDetail/kamera.html"
+                // detailUrl: "/productDetail/kamera.html"
             },
             {
                 id: 6,
@@ -1178,7 +1178,7 @@
                 rating: "★★★☆☆",
                 badge: "Diskon",
                 stock: 12,
-                detailUrl: "/productDetail/charger.html"
+                // detailUrl: "/productDetail/charger.html"
             },
             {
                 id: 7,
@@ -1190,7 +1190,7 @@
                 rating: "★★★★☆",
                 badge: "Hemat",
                 stock: 0,
-                detailUrl: "/productDetail/earbuds.html"
+                // detailUrl: "/productDetail/earbuds.html"
             },
             {
                 id: 8,
@@ -1202,7 +1202,7 @@
                 image: "https://images.unsplash.com/photo-1517705008128-361805f42e86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&h=500&q=80",
                 rating: "★★★★★",
                 stock: 7,
-                detailUrl: "/productDetail/kursi.html"
+                // detailUrl: "/productDetail/kursi.html"
             }
         ];
         
@@ -1581,7 +1581,7 @@
             const encodedMessage = encodeURIComponent(message).replace(/'/g, "%27").replace(/"/g, "%22");
             
             // Redirect ke WhatsApp
-            window.open(`https://wa.me/6281234567890?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/6289677663242?text=${encodedMessage}`, '_blank');
             
             // Tutup modal
             document.getElementById('checkout-modal').classList.remove('active');
