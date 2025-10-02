@@ -20,9 +20,9 @@
                 originalPrice: 40000,
                 price: 35000,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                image: "#",
+                image: "/assets/img/Washer20KG.png",
                 stock: 0,
-                detailUrl: "Washer20KG.png"
+                detailUrl: "#"
             },
             {
                 id: 2,
@@ -30,7 +30,7 @@
                 originalPrice: 10999900,
                 price: 8999900,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                image: "img/plastik.png",
+                image: "/assets/img/Washer20KG.png",
                 stock: 5,
                 detailUrl: "#"
             },
@@ -39,7 +39,7 @@
                 title: "Mesin Cuci LG 20 Kg",
                 price: 17999900,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                image: "#",
+                image: "/assets/img/Washer20KG.png",
                 stock: 10,
                 detailUrl: "#"
             },
@@ -49,7 +49,7 @@
                 originalPrice: 2499900,
                 price: 1999900,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                image: "#",
+                image: "/assets/img/Washer20KG.png",
                 stock: 6,
                 detailUrl: "#"
             },
@@ -58,7 +58,7 @@
                 title: "Mesin Dryer Fogia 16 Kg",
                 price: 12999900,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                image: "#",
+                image: "/assets/img/Washer20KG.png",
                 stock: 17,
                 detailUrl: "#"
             },
@@ -68,7 +68,7 @@
                 originalPrice: 799900,
                 price: 499900,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                image: "#",
+                image: "/assets/img/Washer20KG.png",
                 stock: 0,
                 detailUrl: "#"
             },
@@ -77,18 +77,8 @@
                 title: "Mesin Cuci LG 24 Kg",
                 price: 1599900,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                image: "#",
+                image: "/assets/img/Washer20KG.png",
                 stock: 0,
-                detailUrl: "#"
-            },
-            {
-                id: 8,
-                title: "Kursi Ergonomis Premium",
-                originalPrice: 3999900,
-                price: 3499900,
-                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                image: "#",
-                stock: 7,
                 detailUrl: "#"
             }
         ];
