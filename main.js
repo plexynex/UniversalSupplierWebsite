@@ -51,8 +51,8 @@
             const filteredProducts = products.filter(product => {
                 return (
                     product.title.toLowerCase().includes(searchTerm) ||
-                    product.description.toLowerCase().includes(searchTerm) ||
-                    product.category.toLowerCase().includes(searchTerm)
+                    product.description.toLowerCase().includes(searchTerm)
+                    // product.category.toLowerCase().includes(searchTerm)
                 );
             });
             
@@ -118,10 +118,11 @@
                         <i class="fas fa-cart-plus"></i>
                         ${product.stock === 0 ? 'Stok Habis' : 'Tambah ke Keranjang'}
                     </button>
-                    <a href="${product.detailUrl}" class="view-details" data-id="${product.id}">
-                        <i class="fas fa-info-circle"></i> Lihat Deskripsi
-                    </a>
-                `;
+                    `;
+                    // Pindahkan keatas satu baris jika ingin menambahkan kembali fitur lihat detail
+                    // <a href="${product.detailUrl}" class="view-details" data-id="${product.id}">
+                    //     <i class="fas fa-info-circle"></i> Lihat Deskripsi
+                    // </a>
                 
                 productsContainer.appendChild(productCard);
             });

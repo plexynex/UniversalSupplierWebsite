@@ -16,76 +16,68 @@
         const products = [
             {
                 id: 1,
-                title: "Plastik HD/PP @1KG",
+                title: "Mesin Coin Changer",
                 originalPrice: 40000,
                 price: 35000,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                category: "Audio",
+                image: "#",
+                stock: 0,
+                detailUrl: "Washer20KG.png"
+            },
+            {
+                id: 2,
+                title: "Mesin Cuci LG 10,5 Kg",
+                originalPrice: 10999900,
+                price: 8999900,
+                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+                image: "img/plastik.png",
+                stock: 5,
+                detailUrl: "#"
+            },
+            {
+                id: 3,
+                title: "Mesin Cuci LG 20 Kg",
+                price: 17999900,
+                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+                image: "#",
+                stock: 10,
+                detailUrl: "#"
+            },
+            {
+                id: 4,
+                title: "Mesin Dryer Midea 7 Kg",
+                originalPrice: 2499900,
+                price: 1999900,
+                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+                image: "#",
+                stock: 6,
+                detailUrl: "#"
+            },
+            {
+                id: 5,
+                title: "Mesin Dryer Fogia 16 Kg",
+                price: 12999900,
+                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
+                image: "#",
+                stock: 17,
+                detailUrl: "#"
+            },
+            {
+                id: 6,
+                title: "Mesin Cuci 15 Kg",
+                originalPrice: 799900,
+                price: 499900,
+                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
                 image: "#",
                 stock: 0,
                 detailUrl: "#"
             },
             {
-                id: 2,
-                title: "Smart TV 4K 55 Inch",
-                originalPrice: 10999900,
-                price: 8999900,
-                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                category: "Elektronik",
-                image: "img/plastik.png",
-                stock: 8,
-                detailUrl: "#"
-            },
-            {
-                id: 3,
-                title: "Laptop Gaming Pro",
-                price: 17999900,
-                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                category: "Komputer",
-                image: "#",
-                stock: 5,
-                detailUrl: "#"
-            },
-            {
-                id: 4,
-                title: "Smartwatch Fitness",
-                originalPrice: 2499900,
-                price: 1999900,
-                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                category: "Wearable",
-                image: "#",
-                stock: 20,
-                detailUrl: "#"
-            },
-            {
-                id: 5,
-                title: "Kamera DSLR Profesional",
-                price: 12999900,
-                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                category: "Fotografi",
-                image: "#",
-                stock: 3,
-                detailUrl: "#"
-            },
-            {
-                id: 6,
-                title: "Wireless Charger 3-in-1",
-                originalPrice: 799900,
-                price: 499900,
-                description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                category: "Aksesoris",
-                image: "#",
-                stock: 12,
-                detailUrl: "#"
-            },
-            {
                 id: 7,
-                title: "TWS Noise Cancelling",
+                title: "Mesin Cuci LG 24 Kg",
                 price: 1599900,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                category: "Audio",
                 image: "#",
-                rating: "★★★★☆",
                 stock: 0,
                 detailUrl: "#"
             },
@@ -95,9 +87,7 @@
                 originalPrice: 3999900,
                 price: 3499900,
                 description: "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.",
-                category: "Furnitur",
                 image: "#",
-                rating: "★★★★★",
                 stock: 7,
                 detailUrl: "#"
             }
