@@ -58,7 +58,7 @@
                 originalPrice: 68000,
                 price: 50000,
                 description: "Detergent Cair 5 Liter ini diformulasikan khusus untuk membersihkan pakaian secara menyeluruh, mengangkat noda membandel tanpa merusak serat kain, serta memberikan aroma segar yang tahan lama. Cocok untuk kebutuhan laundry rumahan maupun usaha laundry profesional, deterjen ini menghasilkan busa melimpah, mudah dibilas, dan aman untuk semua jenis mesin cuci. Dengan kemasan ekonomis 5 liter, Anda bisa lebih hemat tanpa mengorbankan kualitas hasil cucian!",
-                image: "/assets/img/detergent5L.png",
+                image: "/assets/img/Detergent5L.png",
                 stock: 5,
             },
             {
