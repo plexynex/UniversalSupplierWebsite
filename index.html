@@ -15,40 +15,66 @@
         <div class="header-container">
             <div class="logo">
                 <i class="fas fa-store"></i>
-                <span>Universal Supplier Laundry</span>
+                <span class="logo-text">
+                    <span class="logo-full">Universal Supplier Laundry</span>
+                    <span class="logo-short">USL</span>
+                </span>
             </div>
-            <nav class="nav-links">
+            <nav class="nav-links" id="nav-links">
                 <a href="#">Beranda</a>
-                <a href="#">Produk</a>
-                <a href="#">Kategori</a>
-                <a href="#">Tentang Kami</a>
-                <a href="#">Kontak</a>
+                <a href="product.html">Produk</a>
+                <a href="package.html">Paket Usaha</a>
+                <a href="#kontak">Kontak</a>
             </nav>
-            <div class="cart-icon" id="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count" id="cart-count">0</span>
+            <div class="header-right">
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Open navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
-    </header>
-    
-    <!-- Search Bar -->
-    <div class="search-container">
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Search" title="Cari produk berdasarkan nama atau deskripsi...">
-        </div>
-    </div>
+    </header>  
     
     <!-- Main Content -->
     <div class="container">
-        <section class="hero">
-            <h1>Temukan Produk Premium</h1>
-            <p>Berbelanja kebutuhan laundry dengan nyaman dan aman di Universal Supplier Laundry. Produk original dengan kualitas terbaik dan harga terjangkau.</p>
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h1>Selamat Datang di Universal Supplier Laundry</h1>
+                    <p>Kami menyediakan perlengkapan laundry berkualitas tinggi dengan harga terjangkau. Produk original dengan garansi resmi dan layanan terbaik untuk kebutuhan bisnis laundry Anda.</p>
+                    <div class="welcome-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Produk Original</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Harga Kompetitif</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Garansi Resmi</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pengiriman Cepat</span>
+                        </div>
+                    </div>
+                    <a href="product.html" class="btn-primary">
+                        <i class="fas fa-shopping-bag"></i>
+                        Lihat Produk
+                    </a>
+                </div>
+                <div class="welcome-image">
+                    <div class="welcome-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <div class="products-grid" id="products-container">
-            <!-- Products will be inserted here by JavaScript -->
-        </div>
     </div>
     
     <!-- Footer -->
@@ -88,7 +114,7 @@
             </div>
             
             <div class="footer-column">
-                <h3>Kontak</h3>
+                <h3 id="kontak">Kontak</h3>
                 <ul>
                     <li><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Cahaya Garden Blok B2 No 11, JI. Cahaya Garden, Sadai, Kota Batam, Kepulauan Riau, Indonesia</li>
                     <li><i class="fas fa-phone" style="margin-right: 0.5rem;"></i>0896-7766-3242</li>

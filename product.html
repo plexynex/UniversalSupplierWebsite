@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Supplier Laundry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/icon.jpg">
+    <link  rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-store"></i>
+                <span class="logo-text">
+                    <span class="logo-full">Universal Supplier Laundry</span>
+                    <span class="logo-short">USL</span>
+                </span>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="product.html">Produk</a>
+                <a href="package.html">Paket Usaha</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+            <div class="header-right">
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+                <button class="hamburger-menu" id="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Search" title="Cari produk berdasarkan nama atau deskripsi...">
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <section class="hero">
+            <h1>Temukan Produk Premium</h1>
+            <p>Berbelanja kebutuhan laundry dengan nyaman dan aman di Universal Supplier Laundry. Produk original dengan kualitas terbaik dan harga terjangkau.</p>
+        </section>
+        
+        <div class="products-grid" id="products-container">
+            <!-- Products will be inserted here by JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Tentang Kami</h3>
+                <p style="color: #b2bec3; font-size: 0.9rem; margin-bottom: 1rem;">Universal Supplier Laundry menyediakan perlengkapan laundry berkualitas dengan garansi resmi dan harga terbaik.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/uni.versal.laundry.2025"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/universalsupplier60/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/search?q=universal%20supplier&t=1764410265039"><i class="fab fa-twitter"></i></a>
+          
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Belanja</h3>
+                <ul>
+                    <li><a href="#">Produk Terbaru</a></li>
+                    <li><a href="#">Produk Terlaris</a></li>
+                    <li><a href="#">Diskon Spesial</a></li>
+                    <li><a href="#">Bundling Produk</a></li>
+                    <li><a href="#">Gift Voucher</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Bantuan</h3>
+                <ul>
+                    <li><a href="#">Cara Belanja</a></li>
+                    <li><a href="#">Pembayaran</a></li>
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Garansi</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3 id="kontak">Kontak</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i> Cahaya Garden Blok B2 No 11, JI. Cahaya Garden, Sadai, Kota Batam, Kepulauan Riau, Indonesia</li>
+                    <li><i class="fas fa-phone" style="margin-right: 0.5rem;"></i>0896-7766-3242</li>
+                    <li><i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> universalsupplier60@gmail.com</li>
+                    <li><i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i> +62896 7766 3242</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Universal Supplier Laundry. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i> by Plexynex Developer</p>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6289677663242?text=Halo%20Universal%20Supplier%20Laundry,%20saya%20ingin%20bertanya%20tentang%20produk%20yang%20terlampir%20di%20website" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <h2 class="cart-title">Keranjang Belanja</h2>
+                <button class="close-cart" id="close-cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be inserted here by JavaScript -->
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Keranjang belanja kosong</p>
+                </div>
+            </div>
+            
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">Rp0</span>
+                </div>
+                <button class="checkout-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    Lanjutkan Pemesanan
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Checkout -->
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Lanjutkan Pemesanan</h2>
+                <button class="close-modal" id="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="customer-name">Nama Lengkap <span style="color: var(--discount);">*</span></label>
+                    <input type="text" id="customer-name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-phone">Nomor WhatsApp <span style="color: var(--discount);">*</span></label>
+                    <input type="tel" id="customer-phone" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-address">Alamat Lengkap <span style="color: var(--discount);">*</span></label>
+                    <textarea id="customer-address" class="form-control" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-notes">Catatan (opsional)</label>
+                    <textarea id="customer-notes" class="form-control" rows="2"></textarea>
+                </div>
+                
+                <button type="submit" class="preorder-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    Pesan via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+    
+    <script src="main.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
